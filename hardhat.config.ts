@@ -22,14 +22,14 @@ const config: HardhatUserConfig = {
   },
   networks: {
     goerli: {
-      url: "https://eth-goerli.g.alchemy.com/v2/JT_sThZx_7hIEnRiDPHbDFscAtA3bEuF",
+      url: process.env.GOERLI_RPC,
       accounts: [process.env.GOERLI_PRIVATE_KEY!],
       allowUnlimitedContractSize: true,
       gas: 10100000,
       gasPrice: 8000000000,
     },
     rinkeby: {
-      url: "https://eth-rinkeby.alchemyapi.io/v2/dVg8OjLTuJPQJ4bxJbGkJzcqvHAecb0y",
+      url: process.env.RINKEBY_RPC,
       accounts: {
         mnemonic: process.env.RINKEBY_MNEMONIC,
       },
