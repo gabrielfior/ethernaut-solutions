@@ -1,13 +1,15 @@
-# Sample Hardhat Project
+# Ethernaut solutions
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+This project contains scripts and the contracts used for solving the Ethernaut exercises (https://ethernaut.openzeppelin.com/), produced by OpenZeppelin.
 
-Try running some of the following tasks:
+For compiling the contracts:
 
 ```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.ts
+yarn hardhat compile
 ```
+
+For executing one of the scripts (for example, the fallback exercise # 2):
+```shell
+yarn hardhat run scripts/fallback.ts
+```
+
